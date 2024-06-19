@@ -55,11 +55,6 @@ def addrecipe(request):
 
 
 if __name__ == '__main__':
-    f=open('openapikey.txt','r')
-    key=f.readline()
-    #print(key)
-    os.environ["OPENAI_API_KEY"]=key
-    os.getenv('OPENAI_API_KEY')
     os.environ["OPENAI_API_KEY"]=0
     os.getenv('OPENAI_API_KEY')
     client=OpenAI() #can also pass key to client if enviro vbl not set
