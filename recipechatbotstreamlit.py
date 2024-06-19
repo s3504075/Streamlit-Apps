@@ -60,7 +60,7 @@ if __name__ == '__main__':
     #print(key)
     os.environ["OPENAI_API_KEY"]=key
     os.getenv('OPENAI_API_KEY')
-    os.environ["OPENAI_API_KEY"]='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' 
+    os.environ["OPENAI_API_KEY"]=0
     os.getenv('OPENAI_API_KEY')
     client=OpenAI() #can also pass key to client if enviro vbl not set
     random.seed()
