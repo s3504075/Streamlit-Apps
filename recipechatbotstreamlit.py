@@ -55,7 +55,7 @@ def addrecipe(request):
 
 
 if __name__ == '__main__':
-    os.environ["OPENAI_API_KEY"]=0
+    os.environ["OPENAI_API_KEY"]==st.secrets["chatGPTkey"]
     os.getenv('OPENAI_API_KEY')
     client=OpenAI() #can also pass key to client if enviro vbl not set
     random.seed()
